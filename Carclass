@@ -1,0 +1,25 @@
+package car;
+
+public class Car {
+	
+           String model = "Unknown";
+           int year = 0;
+           
+           Car(){
+        	   
+           }
+           
+           Car(String model, int year){
+        	   this.model = model;
+        	   this.year = year;
+	}
+    
+           
+           Car(Car car){
+        	   model = car.model;
+        	   year = car.year;
+        	   
+           }
+
+
+}
