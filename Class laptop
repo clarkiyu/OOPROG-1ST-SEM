@@ -1,0 +1,36 @@
+package laptop;
+
+public class Laptop {
+	
+	
+	String brand;
+	String model;
+	double price;
+	
+	Laptop (){
+		
+		this.brand = brand;
+		this.model = model;
+		this.price = 0;
+	}
+	
+	Laptop(String brand, String model, double price){
+		this.brand = brand;
+		this.model = model;
+		this.price = price;
+		
+	}
+	
+	Laptop(String brand){
+		this(brand, "Unknown", 0);
+	}
+	
+	Laptop(String brand, String model){
+		this(brand, model, 0);
+	}
+
+	
+	
+	
+
+}
