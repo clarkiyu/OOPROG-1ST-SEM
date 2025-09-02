@@ -1,0 +1,26 @@
+package employee;
+import javax.swing.JOptionPane;
+public class Main {
+
+	public static void main(String[] args) {		
+		
+		Employee employee1 = new Employee();
+		
+		JOptionPane.showInternalMessageDialog(null, "Name: " + employee1.name + "Salary: " + String.format("%1f", employee1.salary));
+		
+		Employee employee2 = new Employee("John", 50000);
+		
+		JOptionPane.showMessageDialog(null, "Name" + employee2.name + ", Salary: " + String.format("%1f", employee2.salary ));
+		
+		Employee employee3 = new Employee("Alice", 50000);
+		
+		JOptionPane.showMessageDialog(null, "Name" + employee3.name + ", Salary: " + String.format("%1f", employee3.salary ));
+		
+		
+		
+		
+		
+
+	}
+
+}
