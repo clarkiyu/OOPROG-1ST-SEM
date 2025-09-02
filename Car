@@ -1,0 +1,25 @@
+package car;
+import javax.swing.JOptionPane;
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Car defaultCar = new Car();
+		
+		String model = JOptionPane.showInputDialog("Enter Car Model: ");
+		int year = Integer.parseInt(JOptionPane.showInputDialog("Enter Car Year: "));
+		
+		Car userCar = new Car(model, year);
+		
+		JOptionPane.showMessageDialog(null, "Default Car: \nCar Model: " + defaultCar.model+", year: " +defaultCar.year );
+		
+		JOptionPane.showMessageDialog(null, "User Car:\nCar Model: " + userCar.model + ", Year: " + userCar.year);
+		
+		Car copiedCar = new Car(userCar);
+		
+		JOptionPane.showMessageDialog(null, "Copied Car:\nCar Model: " + copiedCar.model + ", Year: " + copiedCar.year);
+	}
+
+}
