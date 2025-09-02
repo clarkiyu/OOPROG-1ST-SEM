@@ -1,0 +1,22 @@
+package laptop;
+import javax.swing.JOptionPane;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		Laptop laptop1 = new Laptop();
+		JOptionPane.showMessageDialog(null, "Brand: " + laptop1.brand + ", Model: " + laptop1.model + ", Price: " + laptop1.price);
+		Laptop laptop2 = new Laptop("Dell");
+		JOptionPane.showMessageDialog(null, "Brand: " + laptop2.brand + ", Model: " + laptop2.model + ", Price: " + laptop2.price);
+		Laptop laptop3 = new Laptop("HP", "Pavilion");
+		JOptionPane.showMessageDialog(null, "Brand: " + laptop3.brand + ", Model: " + laptop3.model + ", Price: " + laptop3.price);
+		Laptop laptop4 = new Laptop("Apple", "Macbook Air", 999.99);
+		JOptionPane.showMessageDialog(null, "Brand: " + laptop4.brand + ", Model: " + laptop3.model + ", Price: " + laptop4.price);
+		
+		
+	
+		
+	}
+
+}
